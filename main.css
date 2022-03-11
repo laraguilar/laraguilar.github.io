@@ -1,0 +1,122 @@
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&family=Overpass:wght@400;600;700;800&display=swap');
+
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: #232323;
+    color: white;
+    margin: 0 120px 0 120px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+
+    
+    grid-template-rows: 70px 1fr 40px;
+}
+
+/* ESTILO DO HEADER */
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#landing{
+    margin-top: 40px;
+}
+
+/* Elementos do Header */
+.logo img{
+    max-height: 50px;
+    display: inline;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 20px;
+    
+}
+
+nav ul li:hover{
+    border: 2px;
+    border-color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-decoration: underline #1BA008;
+    border-radius: 5px; 
+}
+
+/* ESTILO DO MAIN */
+main{
+    align-items: center;
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: #1BA008;
+    margin-bottom: 0;
+}
+
+.developer{
+    font-weight: 700;
+}
+
+.image-landing img{
+    max-width: fit-content;
+}
+
+/* BOTOES */
+.btn {
+    padding: 10px;
+    color: white;
+    background-color: #1BA008;
+    border: none;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    margin-right: 10px;
+
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+
+}
+
+.btn:hover{
+    background-color: #148305;
+    cursor: pointer;
+
+}
+
+.btn.outline{
+    background-color: #232323;
+    border: 1px solid white;
+}
+
+.btn.outline:hover{
+    text-decoration: underline;
+}
+
+/* ESTILO DO FOOTER */
+footer{
+    grid-area: footer;
+}
