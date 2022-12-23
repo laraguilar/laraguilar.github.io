@@ -15,7 +15,7 @@
             // Estas condições verificam a página atual para deixar em 
             // evidência (verde e bold) no menu do header
             var url_atual = window.location.pathname;
-            if(url_atual === "/index.php"){
+            if(url_atual === "/index.html"){
                 selected = document.getElementById('home');
                 selected.style.color = "#1BA008";
                 selected.style.fontWeight = 700;
@@ -26,14 +26,13 @@
 </head>
 <body>
     <!-- CONTEUDO DO HEADER -->
-    <?php include 'projetos.html' ?>
     <header id="landing">
         <div class="logo">
-            <a href="./index.php"><img src="./images/logo-text.svg" alt="Logo lâmpada"></a>
+            <a href="./index.html"><img src="./images/logo-text.svg" alt="Logo lâmpada"></a>
         </div>
         <nav>
             <ul>
-                <li><a id="home" href="./index.php">Home</a></li>
+                <li><a id="home" href="./index.html">Home</a></li>
                 <li><a id="projetos" href="#">Projetos</a></li>
                 <li><a id="sobre mim" href="#">Sobre Mim</a></li>
                 <li><a id="contato" href="#">Contato</a></li>
